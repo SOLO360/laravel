@@ -2,27 +2,26 @@
 /**
  *
  */
-class Animal
+class HelloWorld
 {
-  public $name;
-  public $nickname;
-  public $numberOfLegs;
+  //give a default language
+    public function sayHello($langauge='English')
+  {
+    echo "<p>";
+    //pass the greetings
+    switch ($langauge) {
+      case 'Maasai':
+        echo "Suvai";
+        break;
+      case 'Chaga':
+        echo "Unawari";
+        break;
+      case 'English':
+        default:
+        echo 'Hello World';
+        break;
+    }
+    echo "</br>";
+  }
 
-  public function setName($name)
-  {
-    $this->name = $name;
-  }
-  public function setNickname($nickname)
-  {
-    $this->nickname = $nickname;
-  }
-  public function getName()
-  {
-    return $this->name;
-  }
-  public function  getNickname()
-  {
-    return $this->nickname;
-  }
 }
-?>
