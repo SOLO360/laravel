@@ -11,12 +11,13 @@
       <?php
       include 'index.php';//include class
 
-      $obj = new HelloWorld();
-
-      $obj->sayHello();
-
-
-
+      $area = new Rectangle();
+      $area->setSize(5,5);
+      echo $area->getArea();
+      echo '<br>';
+      echo $area->getPerimeter();
+      echo '<br>';
+      echo $area->getSquare();
        ?>
 
 
