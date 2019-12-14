@@ -25,11 +25,4 @@ class Animal
     return $this->nickname;
   }
 }
-//instatiate a class
-
-$animal = new Animal();   //Instantiation
-$animal ->setName("dog");
-echo $animal ->getName();
-
-
 ?>
